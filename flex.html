@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex responsive</title>
+    <style>
+        .item{
+            background-color: aqua;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .box{
+            width:100px;
+            height: 100px;
+            background-color: brown;
+            border: 2px solid yellow;
+            color: aqua;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container{
+            display: flex;
+            gap: 10px;
+           
+        }
+        .container2{
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+            flex-wrap: wrap;
+        }
+        @media screen and (max-width:576px) {
+            .container{
+                flex-direction: column;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <h2>Flexible Flex</h2>
+    <section class="container">
+        <section class="item">
+            <h3>Flex box</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi animi numquam reprehenderit, voluptatibus odio debitis nisi cumque alias quibusdam inventore.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi animi numquam reprehenderit, voluptatibus odio debitis nisi cumque alias quibusdam inventore.</p>
+        </section>
+        <section class="item">
+            <h3>Flex box</h3>
+            <p>Excepturi ab error voluptas corrupti expedita ipsa soluta rerum! Optio molestias minima necessitatibus rem ex voluptates? Nisi, qui. Non, incidunt!Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi animi numquam reprehenderit, voluptatibus odio debitis nisi cumque alias quibusdam inventore.</p>
+        </section>
+    </section>
+    <section class="container2">
+        <section class="box">item-1</section>
+        <section class="box">item-2</section>
+        <section class="box">item-3</section>
+        <section class="box">item-4</section>
+        <section class="box">item-5</section>
+        <section class="box">item-6</section>
+        <section class="box">item-7</section>
+        <section class="box">item-8</section>
+        <section class="box">item-9</section>
+        <section class="box">item-10</section>
+    </section>
+</body>
+</html>

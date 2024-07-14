@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexible flex</title>
+    <style>
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      .row {
+        height: 300px;
+        display: flex;
+        gap: 5px;
+        margin-bottom: 5px;
+      }
+      .row2 {
+        height: 50%;
+      }
+      .rowtwo {
+        display: flex;
+        height: 300px;
+      }
+      .row > section {
+        flex: 1;
+      }
+      .rowtwo img {
+        /* border: 2px solid red; */
+
+        width: 100px;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Picture collage</h3>
+    <section class="row">
+      <img src="images/A.jpg" alt="" />
+    </section>
+    <section class="row">
+      <section>
+        <img src="images/B.jpg" alt="" />
+      </section>
+      <section>
+        <img src="images/C.jpg" alt="" />
+      </section>
+      <section class="row2">
+        <img src="images/D.jpg" alt="" />
+        <img src="images/E.jpg" alt="" />
+      </section>
+    </section>
+    <section class="rowtwo " style="border:2px solid green"
+    >
+      <section><img src="images/F.jpg" alt="" /></section>
+      <section><img src="images/G.jpg" alt="" /></section>
+      <section><img src="images/H.jpg" alt="" /></section>
+    </section>
+  </body>
+</html>
